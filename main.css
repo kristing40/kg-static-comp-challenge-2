@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  width: 100%;
+  height: 150px;
+  padding: 20px;
+  background-color: #292929;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#header-right-side {
+  width: 125px;
+  float: right;
+}
+
+#admin-username,
+.number {
+  color: #63D1F4;
+}
+
+nav {
+  width: 450px;
+  margin-top: 75px;
+}
+
+.nav-links {
+  padding: 10px;
+  font-size: 22px;
+  font-variant: small-caps;
+  color: #fff;
+}
+
+.same-color-nav-links {
+  color: #7F7F7F;
+}
+
+h1 {
+  color: #575757;
+}
+
+/**Main section**/
+main {
+  /*display: flex;*/
+  width: 95%;
+  margin: 0 auto;
+
+}
+
+/**Comp Card**/
+.comp-card {
+  width: 300px;
+  height: 350px;
+  border: 1px solid #E0E0E0;
+}
+
+.comp-card-sm-cap-title {
+  font-variant: small-caps;
+}
+.views-txt {
+  color: #fff;
+}
+
+textarea {
+  width: 90%;
+  font-size: 60%;
+  padding: 10px;
+  background-color: #F5F5F5;
+}
