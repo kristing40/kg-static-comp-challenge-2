@@ -2,19 +2,31 @@
   box-sizing: border-box;
 }
 
+html,
+body,
+#wrapper {
+  height: 100%;
+}
+
 body{
   margin: 0;
   padding: 0;
 }
 
-header{
+#wrapper,
+header,
+main,
+.comp-card-body-section {
   width: 100%;
+}
+
+header{
   height: 150px;
   padding: 20px;
   background-color: #292929;
 }
 
-.clearfix {
+/*.clearfix {
   content: "";
   display: table;
   clear: both;
@@ -23,11 +35,21 @@ header{
 #header-right-side {
   width: 125px;
   float: right;
-}
+}*/
 
 #admin-username,
-.number {
+.btm-number {
   color: #63D1F4;
+}
+
+.top-number {
+  margin-top: 1px;
+  text-align: center;
+}
+
+.top-number,
+.btm-number {
+  font-size: 23px;
 }
 
 nav {
@@ -36,10 +58,8 @@ nav {
 }
 
 .nav-links {
-  padding: 10px;
+  padding: 15px;
   font-size: 22px;
-  font-variant: small-caps;
-  color: #fff;
 }
 
 .same-color-nav-links {
@@ -48,33 +68,122 @@ nav {
 
 h1 {
   color: #575757;
+  margin-left: 18px;
 }
 
-/**Main section**/
+/**MAIN SECTION**/
 main {
-  /*display: flex;*/
-  width: 95%;
-  margin: 0 auto;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
-/**Comp Card**/
+/**COMP CARD 320view**/
 .comp-card {
-  width: 300px;
-  height: 350px;
+  height: auto;
   border: 1px solid #E0E0E0;
+  margin-bottom: 10px;
 }
 
-.comp-card-sm-cap-title {
+.comp-card,
+.comp-card-body-section {
+  width: 90%;
+}
+
+.comp-card-img-section {
+  height: 120px;
+  background: url(images/man1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.comp-card-arrow-n-views-sections {
+  width: 90%;
+  display: inline;
+}
+
+.comp-card-img-txt-right-side {
+  float: right;
+  margin-right: 15px;
+}
+
+.views-txt {
+  margin-bottom: 0;
+}
+
+.comp-card-body-section {
+  margin: 0 auto;
+}
+
+.comp-card-sm-cap-title,
+.nav-links {
   font-variant: small-caps;
 }
+
+.comp-card-small-txt {
+  color: #D3D3D3;
+  font-size: 75%;
+}
+
+.comp-card-small-txt,
+.btm-number {
+  margin-top: 0;
+}
+
+.comp-card-sm-cap-title,
+h4 {
+  color: #5E5E5E;
+}
+
+.comp-card-recipient-name,
+.comp-card-playlist-txt,
+.comp-card-attacments-txt  {
+  margin-bottom: 0;
+}
+
+.comp-card-name-playlist {
+  margin: 0;
+}
+
+.nav-white-link,
+.top-number,
 .views-txt {
   color: #fff;
 }
 
 textarea {
-  width: 90%;
+  width: 100%;
   font-size: 60%;
   padding: 10px;
+  border: none;
+  border-radius: 5px;
   background-color: #F5F5F5;
+}
+
+/**Images and Icons**/
+.arrow-icon {
+  height: 50px;
+  width: 50px;
+  margin: 15px 15px;
+  transform: scaleX(-1);
+}
+
+/**MEDIA QUERIES**/
+@media screen and (min-width: 400px) {
+  main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;;
+    align-content:space-around;
+  }
+  /*.comp-card {
+    width: 45%;
+  }*/
+}
+@media screen and (min-width: 600px){
+  .comp-card {
+    max-width: 23%;
+  }
 }
