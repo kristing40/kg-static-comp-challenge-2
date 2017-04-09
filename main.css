@@ -11,10 +11,13 @@ body,
 body{
   margin: 0;
   padding: 0;
+  background-color: #EDEDED;
+  font-family: 'Raleway', sans-serif;
 }
 
 #wrapper,
 header,
+.h1-tag-section,
 main,
 .comp-card-body-section {
   width: 100%;
@@ -31,19 +34,29 @@ header{
   display: table;
   clear: both;
 }
+*/
+
+#logo-text {
+  color: #fff;
+}
 
 #header-right-side {
-  width: 125px;
-  float: right;
-}*/
+  /*width: 125px;
+  float: right;*/
+  /*display: none;*/
+}
+
+#admin-username {
+  display: none;
+}
 
 #admin-username,
 .btm-number {
-  color: #63D1F4;
+  display: none;
 }
 
 .top-number {
-  margin-top: 1px;
+  margin-top: -5px;
   text-align: center;
 }
 
@@ -53,28 +66,31 @@ header{
 }
 
 nav {
-  width: 450px;
-  margin-top: 75px;
+  height: 25px;
+  width: 270px;
+  margin: 75px auto auto -10px;
 }
 
 .nav-links {
   padding: 15px;
-  font-size: 22px;
+  font-size: 15px;
 }
 
 .same-color-nav-links {
   color: #7F7F7F;
 }
 
+
 h1 {
+  margin-left: 20px;
   color: #575757;
-  margin-left: 18px;
+  font-size: 30px;
 }
 
 /**MAIN SECTION**/
 main {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -83,8 +99,10 @@ main {
 /**COMP CARD 320view**/
 .comp-card {
   height: auto;
+  background-color: #fff;
   border: 1px solid #E0E0E0;
-  margin-bottom: 10px;
+  margin: 5px;
+  box-shadow: 0px 2px 1px 1px #ccc;
 }
 
 .comp-card,
@@ -93,10 +111,66 @@ main {
 }
 
 .comp-card-img-section {
-  height: 120px;
+  height: 125px;
+
+}
+
+.card-1-img {
   background: url(images/man1.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #949494;
+  background-blend-mode: color-burn;
+}
+
+.card-2-img {
+  background: url(images/man2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #949494;
+  background-blend-mode: color-burn;
+}
+.card-3-img {
+  background: url(images/woman1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #949494;
+  background-blend-mode:color-burn;
+}
+.card-4-img {
+  background: url(images/woman2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #949494;
+  background-blend-mode: color-burn;
+}
+.card-5-img {
+  background: url(images/man3.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #949494;
+  background-blend-mode: color-burn;
+}
+.card-6-img {
+  background: url(images/woman3.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #949494;
+  background-blend-mode: color-burn;
+}
+.card-7-img {
+  background: url(images/man4.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #949494;
+  background-blend-mode: color-burn;
+}
+.card-8-img {
+  background: url(images/woman4.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #949494;
+  background-blend-mode: color-burn;
 }
 
 .comp-card-arrow-n-views-sections {
@@ -127,9 +201,12 @@ main {
   font-size: 75%;
 }
 
-.comp-card-small-txt,
-.btm-number {
+.comp-card-small-txt {
   margin-top: 0;
+}
+
+.btm-number {
+  margin-top: -5px;
 }
 
 .comp-card-sm-cap-title,
@@ -141,6 +218,7 @@ h4 {
 .comp-card-playlist-txt,
 .comp-card-attacments-txt  {
   margin-bottom: 0;
+  font-weight: 600;
 }
 
 .comp-card-name-playlist {
@@ -170,20 +248,105 @@ textarea {
   transform: scaleX(-1);
 }
 
+.nav-icon {
+  height: 18px;
+  width: 18px;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+.logo {
+  height: 100px;
+  width: 150px;
+}
+
+
 /**MEDIA QUERIES**/
 @media screen and (min-width: 400px) {
   main {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;;
-    align-content:space-around;
   }
-  /*.comp-card {
-    width: 45%;
-  }*/
+
+  nav {
+    width: 370px;
+  }
+
+  .nav-links {
+    padding: 10px;
+    font-size: 15px;
+  }
+
 }
-@media screen and (min-width: 600px){
+
+@media screen and (min-width: 460px) {
+  .comp-card {
+    width: 45%;
+  }
+
+  nav {
+    width: 470px;
+  }
+
+  .nav-links {
+      font-size: 22px;
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+      margin-left: 40px;
+  }
+
+  .comp-card {
+    width: 48%;
+  }
+
+  #logo {
+    color: #fff;
+  }
+
+  #header-right-side {
+    width: auto;
+    text-align: center;
+    float: right;
+  }
+
+  #admin-username{
+    font-size: 70%;
+  }
+
+  #admin-username,
+  .btm-number {
+    color: #63D1F4;
+  }
+
+}
+
+@media screen and (min-width: 700px) {
+  nav {
+    margin: 75px auto auto 10px;
+  }
+
+  .comp-card {
+    max-width: 30%;
+  }
+
+}
+
+@media screen and (min-width: 950px) {
+  h1 {
+      margin-left: 40px;
+  }
+
+  nav {
+    margin: 75px auto auto 10px;
+    font-size: 23px;
+  }
+
   .comp-card {
     max-width: 23%;
   }
+
 }
