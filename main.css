@@ -279,7 +279,7 @@ textarea {
 
   #header-right-side {
     height: auto;
-    width: 25%;
+    width: 40%;
     text-align: right;
     float: right;
   }
@@ -313,7 +313,7 @@ textarea {
     vertical-align: middle;
   }
 
-  #logo {
+  #logo-section {
     width: 100%;
   }
 
