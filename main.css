@@ -29,31 +29,17 @@ header{
   background-color: #292929;
 }
 
-/*.clearfix {
-  content: "";
-  display: table;
-  clear: both;
-}
-*/
-
-#logo-text {
-  color: #fff;
-}
-
-#header-right-side {
-  /*width: 125px;
-  float: right;*/
-  /*display: none;*/
-}
-
-#admin-username {
+nav {
   display: none;
 }
 
-#admin-username,
-.btm-number {
+#admin-user-section {
   display: none;
 }
+
+/*#admin-username {
+  display: none;
+}*/
 
 .top-number {
   margin-top: -5px;
@@ -63,21 +49,6 @@ header{
 .top-number,
 .btm-number {
   font-size: 23px;
-}
-
-nav {
-  height: 25px;
-  width: 270px;
-  margin: 75px auto auto -10px;
-}
-
-.nav-links {
-  padding: 15px;
-  font-size: 15px;
-}
-
-.same-color-nav-links {
-  color: #7F7F7F;
 }
 
 
@@ -112,7 +83,6 @@ main {
 
 .comp-card-img-section {
   height: 125px;
-
 }
 
 .card-1-img {
@@ -206,6 +176,7 @@ main {
 }
 
 .btm-number {
+  color: #63D1F4;
   margin-top: -5px;
 }
 
@@ -225,7 +196,6 @@ h4 {
   margin: 0;
 }
 
-.nav-white-link,
 .top-number,
 .views-txt {
   color: #fff;
@@ -257,7 +227,7 @@ textarea {
 
 .logo {
   height: 100px;
-  width: 150px;
+  width: 100%;
 }
 
 
@@ -268,28 +238,31 @@ textarea {
     flex-flow: row wrap;
   }
 
-  nav {
-    width: 370px;
-  }
-
-  .nav-links {
-    padding: 10px;
-    font-size: 15px;
-  }
-
 }
 
 @media screen and (min-width: 460px) {
+  nav {
+    display: inline-block;
+  }
+
+  .logo {
+    height: 100px;
+    width: 90%;
+  }
+
+  .nav-white-link {
+    color: #fff;
+  }
+  .nav-links {
+    padding: 15px;
+    font-size: 15px;
+  }
+
+  .same-color-nav-links {
+    color: #7F7F7F;
+  }
   .comp-card {
     width: 45%;
-  }
-
-  nav {
-    width: 470px;
-  }
-
-  .nav-links {
-      font-size: 22px;
   }
 
 }
@@ -299,22 +272,38 @@ textarea {
       margin-left: 40px;
   }
 
+  #admin-user-section {
+    display: inline-block;
+  }
+
+  nav {
+    width: 480px;
+  }
+
+  .nav-links {
+    font-size: 22px;
+  }
+
   .comp-card {
     width: 48%;
   }
 
-  #logo {
-    color: #fff;
-  }
-
   #header-right-side {
+    height: auto;
     width: auto;
-    text-align: center;
+    text-align: right;
     float: right;
   }
 
-  #admin-username{
+  #admin-user-section {
+    width: 100%;
+    padding-right: 30px;
+  }
+
+  #admin-username {
+    display: inline-block;
     font-size: 70%;
+    padding: 5px;
   }
 
   #admin-username,
@@ -322,20 +311,28 @@ textarea {
     color: #63D1F4;
   }
 
+  .admin-user-icon {
+    height: 18px;
+    width: 18px;
+    vertical-align: top;
+  }
+
+  .admin-user-arrow-icon {
+    height: 9px;
+    width: 9px;
+    vertical-align: middle;
+  }
+
 }
 
 @media screen and (min-width: 700px) {
-  nav {
-    margin: 75px auto auto 10px;
-  }
-
   .comp-card {
     max-width: 30%;
   }
 
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 858px) {
   h1 {
       margin-left: 40px;
   }
