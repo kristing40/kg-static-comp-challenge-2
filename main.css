@@ -335,7 +335,7 @@ textarea {
   }
 
   nav {
-    width: 480px;
+    width: 470px;
     display: inline-block;
     margin: 75px auto auto 10px;
   }
@@ -345,15 +345,11 @@ textarea {
   }
   .nav-links {
     padding: 15px;
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .same-color-nav-links {
     color: #7F7F7F;
-  }
-
-  .nav-links {
-    font-size: 22px;
   }
 
   .comp-card {
@@ -372,7 +368,7 @@ textarea {
   }
 
   nav {
-    font-size: 23px;
+    font-size: 21px;
   }
 
   .comp-card {
